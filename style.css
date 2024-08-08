@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Newsreader", serif;
+    background: #02010a;
+}
+
+.bgcoral {
+    background: orange;
+   
+}
+
+.logo a {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.logo a:hover{
+    color: white;
+}
+
+
+.btncolor {
+    color: black;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+#refresh-button {
+    margin-right: 10px; /* Adjust spacing as needed */
+    border: 1px solid #ddd; /* Optional: style the border */
+    background-color: #fff; /* Optional: style the background */
+    color: orange;
+}
+
+.blog-card img {
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    
+}
+
+.btnread {
+    margin-top: 10px;
+}
+/* Existing styles... */
+
+.btnread {
+    margin-top: 10px;
+    color: black; /* Adjust text color if needed */
+    background-color: orange; /* Adjust background color if needed */
+    border: none; /* Remove default border if needed */
+    padding: 10px 20px; /* Adjust padding if needed */
+    font-size: 1rem; /* Adjust font size if needed */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Black shadow with opacity */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.btnread:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Enhanced black shadow on hover */
+}
+
+
+#blog-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+.card {
+    box-shadow: 10px 10px 12px rgba(255, 165, 0, 0.9); /* Soft orange shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
+   
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 12px 12px 15px rgba(255, 165, 0, 0.7); /* Enhance shadow on hover */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+}
